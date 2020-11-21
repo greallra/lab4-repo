@@ -1,0 +1,22 @@
+{
+  "name": "lab4-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greallra/lab4-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greallra/lab4-repo/issues"
+  },
+  "homepage": "https://github.com/greallra/lab4-repo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
