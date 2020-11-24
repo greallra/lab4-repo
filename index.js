@@ -1,14 +1,16 @@
+'use strict';
+
 const express = require('express');
+
+// Constants
+const PORT = 3000;
+const HOST = '0.0.0.0';
+
+// App
 const app = express();
-const path = require('path')
-const pathIndex = path.join(__dirname, 'index.html');
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 
-app.get('/', (req, res)=> {
-   res.sendFile(pathIndex)
-})
-
-const port = process.env.PORT || 3000;
-
-app.listen(port, ()=>{
-    console.log("server running on port " + port);
-})
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
